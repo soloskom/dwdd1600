@@ -138,7 +138,7 @@ main a {
 .angeloGallery img:hover {
     width: 98%;
     height: auto;
-    box-shadow: 0px 0px 10 rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 .hero {
