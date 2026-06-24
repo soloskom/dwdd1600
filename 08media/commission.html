@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mason Solosko">
+    <meta name="description" content="Learn about Riot Media's art.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="myStylesheet.css">
+    <title>Riot Media Art: Home</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!--page head-->
+    <header>
+        <img src="images/favicon-32x32.png" alt="Logo for Riot Media" width="32" height="32">
+        <h1>Riot Media Art</h1>
+        <span>Criminally Efficient</span>
+    </header>
+
+    <!--page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="current"><a href="commission.html">Commission</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+        </ul>
+    </nav>
+
+    <!--main content-->
+    <main>
+        <h1>Commission</h1>
+        
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Request Information</legend>
+                <label>
+                    <textarea name="details" placeholder="Add details about your requested  piece"></textarea>*
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Client Information</legend>
+                <label>
+                    First and Last Name*<input type="text" name="name" required>
+                </label>
+                <label>
+                    Email Address*<input type="email" name="email" required>
+                </label>
+                <label>
+                    Phone Number <input type="tel" name="phone" placeholder="123-456-7890">
+                </label>
+
+                <label>
+                    How would you like to be notified of the final product?
+                    <select name="time">
+                        <option value="mail">Email</option>
+                        <option value="text">Text Message</option>
+                        <option value="call">Phone Call</option>
+                        <option value="other">Other (specify)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Add-ons</legend>
+                <label><input type="checkbox" name="commercial" value="chosen"> Commerical Use (+20%)</label>
+                <label><input type="checkbox" name="timelapse" value=""> Timelapse (+10%)</label>
+                <label><input type="checkbox" name="rush" value=""> Priority / Rush Order (+50%)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Time Frame</legend>
+                <label><input type="radio" name="method" value="immediate">Immediate (~2 weeks)</label>
+                <label><input type="radio" name="method" value="dense">Moderate (~1 month)</label>
+                <label><input type="radio" name="method" value="open">Open (~2 months or more)</label>
+            </fieldset>            
+
+            <input type="submit" value="Send Commission Request">
+        </form>
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2026 &bull; Mason Solosko &bull; DWDD</p>
+    </footer>
+</body>
+
+</html>
