@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mason Solosko">
+    <meta name="description" content="Learn about Budget Vacations.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="myStylesheet.css">
+    <title>Budget Vacations: Contact Us</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!--page head-->
+    <header>
+        <img src="images/favicon-32x32.png" alt="Logo for Budget Vacations" width="32" height="32">
+        <h1>Budget Vacations</h1>
+        <span>Cheap But Elite!</span>
+    </header>
+
+    <!--page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="clip.html">Showcase</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--main content-->
+    <main>
+        <h1>Contact</h1>
+        
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Message</legend>
+                <label>
+                    <textarea name="details" placeholder="Ask a question, give a comment or suggestion, etc"></textarea>*
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Sender Information</legend>
+                <label>
+                    First and Last Name*<input type="text" name="name" required>
+                </label>
+                <label>
+                    Email Address*<input type="email" name="email" required>
+                </label>
+                <label>
+                    Phone Number <input type="tel" name="phone" placeholder="123-456-7890">
+                </label>
+
+                <label>
+                    Can we reply? If so, how?
+                    <select name="time">
+                        <option value="dont">Don't reply</option>
+                        <option value="text">Text Message</option>
+                        <option value="mail">Email</option>
+                        <option value="call">Phone Call</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reply Availability</legend>
+                <label><input type="checkbox" name="weekdays" value="chosen"> Weekdays</label>
+                <label><input type="checkbox" name="weekends" value=""> Weekends</label>
+                <label><input type="checkbox" name="early" value=""> Early Day (10am-4pm)</label>
+                <label><input type="checkbox" name="late" value=""> Late Nights (4pm-8pm)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reason For Message</legend>
+                <label><input type="radio" name="reason" value="question">Question</label>
+                <label><input type="radio" name="reason" value="comment">Comment</label>
+                <label><input type="radio" name="reason" value="help">Help Request</label>
+            </fieldset>            
+
+            <input type="submit" value="Send Commission Request">
+        </form>
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2026 &bull; Mason Solosko &bull; DWDD</p>
+    </footer>
+</body>
+
+</html>

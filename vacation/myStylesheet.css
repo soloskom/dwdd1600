@@ -1,0 +1,473 @@
+/*prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+body {
+    font-family: "Anuphan", sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+/* header stuff here */
+header {
+    background-color: white;
+    margin: .2rem .2rem 0 .2rem;
+    padding: 1rem 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+header span{
+    color: #3b3b3b;
+    padding: 0 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
+header h1{
+    color: black;
+    display: inline;
+    margin: 0 0 0 0.75rem;
+    vertical-align: middle;
+}
+header img {
+    vertical-align: middle;
+}
+
+/*small screen navigation*/
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: black;
+        padding: .75rem;
+        margin: 0 .2rem .2rem .2rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 30px;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #e2e2e2;
+        font-weight: 700;
+    }
+    nav li.current a {
+        background-image: linear-gradient(to right, #e2e2e2, #ffffff);
+        border-radius: 50px;
+        color: #222;
+    }
+    nav li a:hover {
+        color: white;
+    }
+} /*end small screen nav*/
+
+.myMedia {
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+/*LARGE screen navigation*/
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: black;
+        padding: .75rem;
+        margin: 0 .2rem .2rem .2rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 30px;
+        list-style-type: none;
+        display: flex;
+    }
+    nav a {
+        display: block;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #e2e2e2;
+        font-weight: 700;
+    }
+    nav li.current a {
+        background-image: linear-gradient(to bottom, #e2e2e2, #ffffff);
+        border-radius: 10px;
+        color: #222;
+    }
+    nav li a:hover {
+        color: white;
+    }
+} /*end large screen nav*/
+
+
+/* main stuff here */
+main {
+    padding: 1rem 40px;
+    color: #d6d6d6;
+    min-height: 85dvh;
+    background-image: linear-gradient(to top, #e2e2e2, #ffffff);
+}
+
+/*start small screen package thing*/
+@media only screen and (max-width: 600px) {
+    main figure.package {
+        border-top: 16px solid #999;
+        border-radius: 3px;
+        padding: 1rem 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0px 0px;
+    }
+
+    main figure.package p {
+        border-left: 0px solid black;
+    }
+}
+
+/*start big screen package thing*/
+@media only screen and (min-width: 601px) {
+    main figure.package {
+        display: flex;
+        border-left: 16px solid #999;
+        border-radius: 3px;
+        padding: 1rem 1rem;
+    }
+
+    main figure.package p {
+        border-left: 0px solid black;
+    }
+}
+
+
+/*start small screen header*/
+@media only screen and (max-width: 600px) {
+    main h1 {
+        color: black; /*alt: 7DEBFF*/
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 750;
+        letter-spacing: 2px;
+        padding: 15px 20px;
+        border-bottom: 8px solid black;
+        width: fit-content;
+    }
+}/*end small screen header*/
+
+/*start large screen header*/
+@media only screen and (min-width: 601px) {
+    main h1 {
+        color: black; /*alt: 7DEBFF*/
+        font-weight: 750;
+        letter-spacing: 2px;
+        padding: 15px 20px;
+        border-bottom: 8px solid black;
+        margin: 0 0 1rem 0;
+        width: fit-content;
+    }
+}/*end large screen header*/
+
+@media only screen and (max-width: 600px) {
+main h2 {
+    color: #e2e2e2; /*alt: #e2e2e2*/
+    font-weight: 550;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    background-color: #333;
+    padding: 7.5px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+}/*end small screen header2*/
+
+@media only screen and (min-width: 601px) {
+main h2 {
+    color: #222; /*alt: #e2e2e2*/
+    font-weight: 550;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    padding: 7.5px 20px;
+    border-left: 6px solid #444;
+    width: fit-content;
+    margin: 50px 0 .75rem 0;
+}
+}/*end large screen header2*/
+
+main p {
+    margin: 0 40px;
+    font-weight: 450;
+    color: #222;
+    padding: 15px 30px;
+    border-left: 4px solid #888;
+    width: fit-content;
+}
+
+main ol {
+    margin-left: 40px;
+    padding: 1rem 50px;
+    line-height: 1.5rem;
+    color: #333;
+    border-radius: 10px;
+    width: fit-content;
+}
+main dl {
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 0 40px;
+}
+main dl dt {
+    color: #222;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+main dl dd {
+    color: #333;
+    font-size: .9rem;
+    margin: 10px 20px;
+}
+main ul {
+    color: #333;
+    list-style-type: circle;
+    margin: 20px 40px;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main strong {
+    font-weight: 700;
+    color: black;
+}
+main em {
+    font-weight: 450;
+}
+main address {
+    font-style: normal;
+    margin: 1rem 30px;
+    background-color: #333;
+    color: #e2e2e2;
+    padding: .5rem .75rem;
+    border-radius: 10px;
+    border: 2px solid #3f6853;
+    width: fit-content;
+}
+main a {
+    color : #222;
+}
+main a:hover {
+    color: #777;
+}
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/*small gallery*/
+@media only screen and (max-width: 600px) {
+    div.gallery {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 10px;
+    }
+
+    div.gallery figcaption {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #222;
+    }
+
+    div.gallery figure {
+        width: 90%;
+    }
+    div.gallery figure img {
+        display: flex;
+        margin: auto;
+        width: 90%;
+        height: auto;
+        justify-content: center;
+    }
+}
+/*large gallery*/
+@media only screen and (min-width: 601px) {
+    div.gallery {
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 10px;
+    }
+
+    div.gallery figcaption {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #222;
+    }
+
+    div.gallery figure {
+        margin: 0;
+    }
+}
+
+/* image stuff here */
+/* image stuff */
+figure.wrapped {
+    margin: 10px 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+/*gallery stuff*/
+div.gallery {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery img {
+    border-radius: 10px;
+    pointer-events: auto;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #222;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+div.gallery {
+    pointer-events: none;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+.myForm {
+    color: #333;
+}
+
+.myForm fieldset {
+    border: 0px solid #666;
+    border-left: 10px solid #666;
+    margin-bottom: 3rem;
+    padding: 1rem 1rem 1rem 2rem;
+}
+.myForm legend {
+    color: #333;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    display: block;
+    margin: .5rem 0 .5rem 0;
+    border-radius: 1rem;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    background-color: white;
+    border-radius: 0px;
+    padding: .5rem .5rem;
+    color: #444;
+}
+.myForm select {
+    background-color: white;
+    padding: .2rem 0 .2rem .75rem;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.myForm textarea {
+    min-width: 20rem;
+    min-height: 8rem;
+}
+
+.myForm [type=submit] {
+    background-color: #222;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    color: white;
+    margin: 0 0 50px 50px;
+    letter-spacing: 1.5px;
+    font-weight: 550;
+}
+
+
+
+/* table stuff here */
+table.myTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    margin: 1rem 0;
+}
+
+table.myTable th {
+    background-color: black;
+    color: white;
+    padding: .6rem 2%;
+    text-align: left;
+}
+
+table.myTable td {
+    color: #DDD;
+    padding: .4rem 2%;
+}
+
+table.myTable tr:nth-child(odd) {
+    background-color: #555;
+}
+
+table.myTable tr:hover {
+    background-color: #666;
+}
+
+
+
+/* footer stuff here */
+footer {
+    background-color: #070707;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #e2e2e2;
+    clear: both;
+}
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+header, nav, main, footer {
+    max-width: 85rem;
+    margin: 0 auto;
+}
